@@ -153,7 +153,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn_time: 3
-  body_to_spawn: {fileID: 3174400551465160585, guid: 8f418c35f2fa1aa4586e8cb71bc2b603, type: 3}
+  body_to_spawn_1: {fileID: 3174400551465160585, guid: 8f418c35f2fa1aa4586e8cb71bc2b603, type: 3}
+  body_to_spawn_2: {fileID: 7263999536156044583, guid: 62c79e011b4019444a645e57cdd50c7e, type: 3}
+  body_to_spawn_3: {fileID: 6237892377233614890, guid: 2803e9206132b3c4ab4486a89bc1769e, type: 3}
 --- !u!4 &487147594
 Transform:
   m_ObjectHideFlags: 0
@@ -363,7 +365,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn_time: 3
-  body_to_spawn: {fileID: 4838752534732319749, guid: 1fd8fc1b633deb9418ee055e5106830a, type: 3}
+  body_to_spawn_1: {fileID: 4838752534732319749, guid: 1fd8fc1b633deb9418ee055e5106830a, type: 3}
+  body_to_spawn_2: {fileID: 1347648259664739924, guid: b5277b965e7018249973614d9c450a75, type: 3}
+  body_to_spawn_3: {fileID: 6713319944462317193, guid: c82cc4bd983adb4498fb47a6e8a767f2, type: 3}
 --- !u!4 &1376208910
 Transform:
   m_ObjectHideFlags: 0
@@ -783,6 +787,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6676492287673207369, guid: f844e4beba6ae00409602bbae4185794, type: 3}
+      propertyPath: body_to_spawn_1
+      value: 
+      objectReference: {fileID: 1888228875495060747, guid: fc3e14a019fdf5a4ab698b6e33e80b5d, type: 3}
+    - target: {fileID: 6676492287673207369, guid: f844e4beba6ae00409602bbae4185794, type: 3}
+      propertyPath: body_to_spawn_2
+      value: 
+      objectReference: {fileID: 5375813659454018375, guid: ba25d57ef6bc23b46aaeec8a2ab577e0, type: 3}
+    - target: {fileID: 6676492287673207369, guid: f844e4beba6ae00409602bbae4185794, type: 3}
+      propertyPath: body_to_spawn_3
+      value: 
+      objectReference: {fileID: 1056391932225405792, guid: 013c015bce9bf8042a60095c62a3cbb7, type: 3}
     - target: {fileID: 6676492287673207374, guid: f844e4beba6ae00409602bbae4185794, type: 3}
       propertyPath: m_Name
       value: Spawner_1
