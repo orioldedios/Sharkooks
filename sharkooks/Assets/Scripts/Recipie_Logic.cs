@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Recipie_Logic : MonoBehaviour
 {
+    public GameObject losing_bar_Gameobject = null;
+    public float correct_bonus = 1.0f;
+
     public Sprite face_A = null;
     public Sprite face_B = null;
     public Sprite face_C = null;
@@ -49,6 +52,10 @@ public class Recipie_Logic : MonoBehaviour
 
         if (player_got_it)
         {
+            if(losing_bar_Gameobject.transform.localScale.x <= 0) 
+                losing_bar_Gameobject.transform.localScale = new Vector3(0.0f, transform.localScale.y, transform.localScale.z);
+            losing_bar_Gameobject.transform.localScale = new Vector3(transform.localScale.x - correct_bonus * Time.deltaTime, transform.localScale.y, transform.localScale.z);
+
             player_got_it = face_got_it = body_got_it = legs_got_it = false;
 
             //face random selection
