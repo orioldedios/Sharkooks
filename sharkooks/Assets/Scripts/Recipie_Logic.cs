@@ -18,6 +18,9 @@ public class Recipie_Logic : MonoBehaviour
     public GameObject show_body = null;
     public GameObject show_legs = null;
 
+    public bool face_got_it = false;
+    public bool body_got_it = false;
+    public bool legs_got_it = false;
     public bool player_got_it = true;
 
     // Start is called before the first frame update
@@ -29,9 +32,11 @@ public class Recipie_Logic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(player_got_it)
+        if (face_got_it && body_got_it && legs_got_it) player_got_it = true;
+
+        if (player_got_it)
         {
-            player_got_it = false;
+            player_got_it = face_got_it = body_got_it = legs_got_it = false;
 
             //face random selection
             int random_face_iterator = Random.Range(1, 4);
