@@ -16,5 +16,7 @@ public class Body_Movement : MonoBehaviour
     void Update()
     {
         transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
+
+        if (transform.position.y < -6.0f) Destroy(this.gameObject);
     }
 }
