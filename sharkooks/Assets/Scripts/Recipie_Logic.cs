@@ -32,12 +32,15 @@ public class Recipie_Logic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        player_got_it = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if (losing_bar_Gameobject.transform.localScale.x <= 0.0f)
+            losing_bar_Gameobject.transform.localScale = new Vector3(0.1f, transform.localScale.y, transform.localScale.z);
 
         if (face_got_it) face_ok.GetComponent<SpriteRenderer>().enabled = true;
         else face_ok.GetComponent<SpriteRenderer>().enabled = false;
@@ -52,9 +55,8 @@ public class Recipie_Logic : MonoBehaviour
 
         if (player_got_it)
         {
-            if(losing_bar_Gameobject.transform.localScale.x <= 0) 
-                losing_bar_Gameobject.transform.localScale = new Vector3(0.0f, transform.localScale.y, transform.localScale.z);
-            losing_bar_Gameobject.transform.localScale = new Vector3(transform.localScale.x - correct_bonus * Time.deltaTime, transform.localScale.y, transform.localScale.z);
+            //if(transform.localScale.x > 1.0f * Time.deltaTime)
+            losing_bar_Gameobject.transform.localScale = new Vector3(losing_bar_Gameobject.transform.localScale.x - correct_bonus, losing_bar_Gameobject.transform.localScale.y, losing_bar_Gameobject.transform.localScale.z);
 
             player_got_it = face_got_it = body_got_it = legs_got_it = false;
 

@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   losing_bar_Gameobject: {fileID: 1164023221}
-  correct_bonus: 0.008
+  correct_bonus: 0.5
   face_A: {fileID: 21300000, guid: 233f173211bc10145b7555244df8b988, type: 3}
   face_B: {fileID: 21300000, guid: c9bccdaeac5c2fb45a52d1a8af98d751, type: 3}
   face_C: {fileID: 21300000, guid: 29a4ed2d169d88c4e9223ba1435a958f, type: 3}
@@ -174,7 +174,7 @@ MonoBehaviour:
   face_got_it: 0
   body_got_it: 0
   legs_got_it: 0
-  player_got_it: 1
+  player_got_it: 0
 --- !u!212 &453511202
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -811,7 +811,7 @@ Transform:
   m_GameObject: {fileID: 1164023221}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -8.02, y: -3.91, z: -3.6706314}
-  m_LocalScale: {x: 6.5, y: 0.62194896, z: 1}
+  m_LocalScale: {x: 1.364382, y: 0.62194896, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
@@ -1030,7 +1030,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1678075593}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1440,11 +1440,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4838752534732319746, guid: 1fd8fc1b633deb9418ee055e5106830a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.78
+      value: 6.46
       objectReference: {fileID: 0}
     - target: {fileID: 4838752534732319746, guid: 1fd8fc1b633deb9418ee055e5106830a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.07
+      value: 2.21
       objectReference: {fileID: 0}
     - target: {fileID: 4838752534732319746, guid: 1fd8fc1b633deb9418ee055e5106830a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1481,6 +1481,10 @@ PrefabInstance:
     - target: {fileID: 4838752534732319749, guid: 1fd8fc1b633deb9418ee055e5106830a, type: 3}
       propertyPath: m_Name
       value: Body_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838752534732319750, guid: 1fd8fc1b633deb9418ee055e5106830a, type: 3}
+      propertyPath: wrong_penalty
+      value: 0.8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -2158896114282355963, guid: 1fd8fc1b633deb9418ee055e5106830a, type: 3}

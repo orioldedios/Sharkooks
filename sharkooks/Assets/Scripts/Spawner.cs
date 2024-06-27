@@ -7,6 +7,7 @@ public class Spawner : MonoBehaviour
     private float timer = 0.0f;
     private GameObject body_iterator = null;
     private int random_iterator = 1;
+    private int previous_random_iterator = 0;
 
     public float spawn_time = 5.0f;
     public GameObject body_to_spawn_1 = null;
@@ -25,7 +26,11 @@ public class Spawner : MonoBehaviour
         if (timer < spawn_time) timer += Time.deltaTime;
         else
         {
-            random_iterator = Random.Range(1, 4);
+            do
+            {
+                random_iterator = Random.Range(1, 4);
+            } while (random_iterator == previous_random_iterator);
+
             switch (random_iterator)
             {
                 case 1:
@@ -39,6 +44,7 @@ public class Spawner : MonoBehaviour
                     break;
             }
 
+            previous_random_iterator = random_iterator;
 
             timer = 0.0f;
             GameObject new_object = Instantiate(body_iterator, transform.position, Quaternion.identity);
