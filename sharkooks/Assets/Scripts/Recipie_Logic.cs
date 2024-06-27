@@ -17,6 +17,9 @@ public class Recipie_Logic : MonoBehaviour
     public GameObject show_face = null;
     public GameObject show_body = null;
     public GameObject show_legs = null;
+    public GameObject face_ok = null;
+    public GameObject body_ok = null;
+    public GameObject legs_ok = null;
 
     public bool face_got_it = false;
     public bool body_got_it = false;
@@ -32,6 +35,16 @@ public class Recipie_Logic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (face_got_it) face_ok.GetComponent<SpriteRenderer>().enabled = true;
+        else face_ok.GetComponent<SpriteRenderer>().enabled = false;
+        
+        if (body_got_it) body_ok.GetComponent<SpriteRenderer>().enabled = true;
+        else body_ok.GetComponent<SpriteRenderer>().enabled = false;
+        
+        if (legs_got_it) legs_ok.GetComponent<SpriteRenderer>().enabled = true;
+        else legs_ok.GetComponent<SpriteRenderer>().enabled = false;
+
         if (face_got_it && body_got_it && legs_got_it) player_got_it = true;
 
         if (player_got_it)
