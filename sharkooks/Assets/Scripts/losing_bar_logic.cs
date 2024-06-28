@@ -12,7 +12,7 @@ public class losing_bar_logic : MonoBehaviour
     void Start()
     {
         transform.localScale = new Vector3(0.0f, transform.localScale.y, transform.localScale.z);
-        you_lose_game_object.GetComponent<SpriteRenderer>().enabled = false;
+        //you_lose_game_object.SetActive(false);
     }
 
     // Update is called once per frame
@@ -21,7 +21,7 @@ public class losing_bar_logic : MonoBehaviour
 
         if (transform.localScale.x >= losing_number)
         {
-            you_lose_game_object.GetComponent<SpriteRenderer>().enabled = true;
+            you_lose_game_object.SetActive(true);
         }
         else
         {
