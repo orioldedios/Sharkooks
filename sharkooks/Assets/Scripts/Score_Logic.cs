@@ -18,5 +18,10 @@ public class Score_Logic : MonoBehaviour
     void Update()
     {
         this.gameObject.GetComponent<Text>().text = "" + score;
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 }
