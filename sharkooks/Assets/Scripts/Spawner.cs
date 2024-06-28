@@ -8,6 +8,7 @@ public class Spawner : MonoBehaviour
     private GameObject body_iterator = null;
     private int random_iterator = 1;
     private int previous_random_iterator = 0;
+    private bool spawn = false;
 
     public bool body_1_spawned = false;
     public bool body_2_spawned = false;
@@ -28,8 +29,7 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timer < spawn_time) timer += Time.deltaTime;
-        else
+        if (spawn)
         {
             //do
             //{
@@ -63,12 +63,19 @@ public class Spawner : MonoBehaviour
 
             //previous_random_iterator = random_iterator;
 
-            timer = 0.0f;
+            //timer = 0.0f;
 
-            if (spawn_time > 1.0f) spawn_time -= (0.05f);
+            //if (spawn_time > 1.0f) spawn_time -= (0.05f);
 
 
             GameObject new_object = Instantiate(body_iterator, transform.position, Quaternion.identity);
+
+            spawn = false;
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        spawn = true;
     }
 }

@@ -337,7 +337,7 @@ Transform:
   m_GameObject: {fileID: 466856164}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.5, y: 0.04, z: -1}
-  m_LocalScale: {x: 0.4708968, y: 0.4708968, z: 0.4708968}
+  m_LocalScale: {x: 0.12142132, y: 0.12142132, z: 0.12142132}
   m_Children: []
   m_Father: {fileID: 453511203}
   m_RootOrder: 1
@@ -352,6 +352,7 @@ GameObject:
   m_Component:
   - component: {fileID: 487147594}
   - component: {fileID: 487147593}
+  - component: {fileID: 487147595}
   m_Layer: 0
   m_Name: Spawner_3
   m_TagString: Untagged
@@ -393,6 +394,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &487147595
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487147592}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.11950064, y: -0.5617744}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2390013, y: 1.3898027}
+  m_EdgeRadius: 0
 --- !u!1 &494105996
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,7 +497,7 @@ Transform:
   m_GameObject: {fileID: 494105996}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.5, y: -1.5, z: -1}
-  m_LocalScale: {x: 0.4708968, y: 0.4708968, z: 0.4708968}
+  m_LocalScale: {x: 0.16653317, y: 0.16653317, z: 0.16653317}
   m_Children: []
   m_Father: {fileID: 453511203}
   m_RootOrder: 2
@@ -635,7 +662,7 @@ Transform:
   m_GameObject: {fileID: 544002681}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.5, y: 1.53, z: -1}
-  m_LocalScale: {x: 0.4708968, y: 0.4708968, z: 0.4708968}
+  m_LocalScale: {x: 0.109388575, y: 0.109388575, z: 0.109388575}
   m_Children: []
   m_Father: {fileID: 453511203}
   m_RootOrder: 0
@@ -669,7 +696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5efc39638f1bdad47b48eea6d71e7feb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  difficulty: 0.005
+  difficulty: 0.01
   global_speed: 0.3
 --- !u!4 &718847268
 Transform:
@@ -957,6 +984,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1376208910}
   - component: {fileID: 1376208909}
+  - component: {fileID: 1376208911}
   m_Layer: 0
   m_Name: Spawner_2
   m_TagString: Untagged
@@ -998,6 +1026,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1376208911
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376208908}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.031591415, y: -0.79107}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.3383389, y: 1.0229301}
+  m_EdgeRadius: 0
 --- !u!1001 &1655489869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1535,12 +1589,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Body_1
       objectReference: {fileID: 0}
-    - target: {fileID: 4838752534732319750, guid: 1fd8fc1b633deb9418ee055e5106830a, type: 3}
-      propertyPath: wrong_penalty
-      value: 0.8
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: -2158896114282355963, guid: 1fd8fc1b633deb9418ee055e5106830a, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fd8fc1b633deb9418ee055e5106830a, type: 3}
 --- !u!1001 &6562313382583602359
 PrefabInstance:
@@ -1654,18 +1703,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6676492287673207369, guid: f844e4beba6ae00409602bbae4185794, type: 3}
-      propertyPath: body_to_spawn_1
-      value: 
-      objectReference: {fileID: 1888228875495060747, guid: fc3e14a019fdf5a4ab698b6e33e80b5d, type: 3}
-    - target: {fileID: 6676492287673207369, guid: f844e4beba6ae00409602bbae4185794, type: 3}
-      propertyPath: body_to_spawn_2
-      value: 
-      objectReference: {fileID: 5375813659454018375, guid: ba25d57ef6bc23b46aaeec8a2ab577e0, type: 3}
-    - target: {fileID: 6676492287673207369, guid: f844e4beba6ae00409602bbae4185794, type: 3}
-      propertyPath: body_to_spawn_3
-      value: 
-      objectReference: {fileID: 1056391932225405792, guid: 013c015bce9bf8042a60095c62a3cbb7, type: 3}
     - target: {fileID: 6676492287673207374, guid: f844e4beba6ae00409602bbae4185794, type: 3}
       propertyPath: m_Name
       value: Spawner_1

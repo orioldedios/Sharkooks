@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 3174400551465160585}
   m_LocalRotation: {x: 0, y: 0, z: 0.10302687, w: 0.9946786}
   m_LocalPosition: {x: -6.37, y: -0.38, z: 0}
-  m_LocalScale: {x: 0.3207876, y: 0.3207876, z: 0.3207876}
+  m_LocalScale: {x: 0.11343596, y: 0.11343596, z: 0.11343596}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -119,18 +119,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.00349617, y: 0.6666113}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.74, y: 2.78}
+    oldSize: {x: 13.56, y: 6.22}
     newSize: {x: 2.74, y: 2.78}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.7294676, y: 2.7294676}
+  m_Size: {x: 11.632528, y: 7.080533}
   m_EdgeRadius: 0
 --- !u!114 &3907411796551904731
 MonoBehaviour:
