@@ -92,7 +92,7 @@ public class Recipie_Logic : MonoBehaviour
                     show_body.GetComponent<SpriteRenderer>().sprite = body_A;
                     break;
                 case 2:
-                    show_body.GetComponent<SpriteRenderer>().sprite = body_C;
+                    show_body.GetComponent<SpriteRenderer>().sprite = body_B;
                     break;
                 case 3:
                     show_body.GetComponent<SpriteRenderer>().sprite = body_C;
@@ -110,7 +110,7 @@ public class Recipie_Logic : MonoBehaviour
                     show_legs.GetComponent<SpriteRenderer>().sprite = legs_B;
                     break;
                 case 3:
-                    show_legs.GetComponent<SpriteRenderer>().sprite = legs_B;
+                    show_legs.GetComponent<SpriteRenderer>().sprite = legs_C;
                     break;
             }
 
