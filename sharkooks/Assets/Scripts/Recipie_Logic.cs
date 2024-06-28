@@ -5,6 +5,7 @@ using UnityEngine;
 public class Recipie_Logic : MonoBehaviour
 {
     public GameObject losing_bar_Gameobject = null;
+    public GameObject score_UI = null;
     public float correct_bonus = 1.0f;
 
     public Sprite face_A = null;
@@ -55,6 +56,8 @@ public class Recipie_Logic : MonoBehaviour
 
         if (player_got_it)
         {
+            score_UI.GetComponent<Score_Logic>().score += 1;
+
             //if(transform.localScale.x > 1.0f * Time.deltaTime)
             losing_bar_Gameobject.transform.localScale = new Vector3(losing_bar_Gameobject.transform.localScale.x - correct_bonus, losing_bar_Gameobject.transform.localScale.y, losing_bar_Gameobject.transform.localScale.z);
 
