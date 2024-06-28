@@ -145,3 +145,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -0.5
+  wrong_penalty: 0.8
+  bar_go: {fileID: 0}
+  game_manager: {fileID: 0}

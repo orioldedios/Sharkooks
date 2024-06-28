@@ -371,7 +371,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7fa2e839891267468bd24bc41422c64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  body_1_spawned: 0
+  body_2_spawned: 0
+  body_3_spawned: 0
   spawn_time: 3
+  Spawner_offset: 0
   body_to_spawn_1: {fileID: 3174400551465160585, guid: 8f418c35f2fa1aa4586e8cb71bc2b603, type: 3}
   body_to_spawn_2: {fileID: 7263999536156044583, guid: 62c79e011b4019444a645e57cdd50c7e, type: 3}
   body_to_spawn_3: {fileID: 6237892377233614890, guid: 2803e9206132b3c4ab4486a89bc1769e, type: 3}
@@ -635,6 +639,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 453511203}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &718847266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 718847268}
+  - component: {fileID: 718847267}
+  m_Layer: 0
+  m_Name: Game_Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &718847267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718847266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5efc39638f1bdad47b48eea6d71e7feb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  difficulty: 0.005
+  global_speed: 0.3
+--- !u!4 &718847268
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718847266}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0563853, y: -0.6159766, z: -3.6646652}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1146159303
 GameObject:
@@ -927,7 +976,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7fa2e839891267468bd24bc41422c64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  body_1_spawned: 0
+  body_2_spawned: 0
+  body_3_spawned: 0
   spawn_time: 3
+  Spawner_offset: 2
   body_to_spawn_1: {fileID: 4838752534732319749, guid: 1fd8fc1b633deb9418ee055e5106830a, type: 3}
   body_to_spawn_2: {fileID: 1347648259664739924, guid: b5277b965e7018249973614d9c450a75, type: 3}
   body_to_spawn_3: {fileID: 6713319944462317193, guid: c82cc4bd983adb4498fb47a6e8a767f2, type: 3}
