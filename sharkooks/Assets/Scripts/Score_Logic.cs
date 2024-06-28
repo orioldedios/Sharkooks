@@ -17,6 +17,6 @@ public class Score_Logic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.gameObject.GetComponent<Text>().text = "Score " + score;
+        this.gameObject.GetComponent<Text>().text = "" + score;
     }
 }
