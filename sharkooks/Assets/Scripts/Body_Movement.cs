@@ -41,6 +41,7 @@ public class Body_Movement : MonoBehaviour
         if(collider.gameObject.name == "Rubbish" && collider.gameObject.transform.position.y < this.gameObject.transform.position.y)
         {
             bar_go.transform.localScale = new Vector3(bar_go.transform.localScale.x + wrong_penalty, bar_go.transform.localScale.y, bar_go.transform.localScale.z);
+            bar_go.GetComponent<AudioSource>().PlayOneShot(bar_go.GetComponent<losing_bar_logic>().rubbish_FX);
             Destroy(this.gameObject);
         }
     }

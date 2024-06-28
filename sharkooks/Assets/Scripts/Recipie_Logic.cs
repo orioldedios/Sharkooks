@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Recipie_Logic : MonoBehaviour
 {
+    public AudioClip correct_FX = null;
+
+
     public GameObject losing_bar_Gameobject = null;
     public GameObject score_UI = null;
     public float correct_bonus = 1.0f;
@@ -56,6 +59,9 @@ public class Recipie_Logic : MonoBehaviour
 
         if (player_got_it)
         {
+            this.gameObject.GetComponent<AudioSource>().PlayOneShot(correct_FX);
+
+
             score_UI.GetComponent<Score_Logic>().score += 1;
 
             //if(transform.localScale.x > 1.0f * Time.deltaTime)

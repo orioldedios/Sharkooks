@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class losing_bar_logic : MonoBehaviour
 {
+    public AudioClip losing_FX = null;
+    public AudioClip rubbish_FX = null;
+
     public float speed = 0.5f;
     public float losing_number = 6.5f;
     public GameObject you_lose_game_object = null;
@@ -22,6 +25,9 @@ public class losing_bar_logic : MonoBehaviour
         if (transform.localScale.x >= losing_number)
         {
             you_lose_game_object.SetActive(true);
+
+            this.gameObject.GetComponent<AudioSource>().PlayOneShot(losing_FX);
+
         }
         else
         {
